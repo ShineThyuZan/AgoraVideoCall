@@ -42,8 +42,8 @@ fun VideoScreen(
     }
 
     BackHandler {
-        agoraView?.leaveChannel()
         onNavigateUp()
+        agoraView?.leaveChannel()
     }
 
     if (viewModel.hasAudioPermission.value && viewModel.hasCameraPermission.value) {
