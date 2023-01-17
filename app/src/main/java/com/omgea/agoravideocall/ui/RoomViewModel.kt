@@ -21,7 +21,6 @@ class RoomViewModel : ViewModel() {
             text = name
         )
     }
-
     fun onJoinRoom() {
         if (roomName.value.text.isBlank()) {
 
